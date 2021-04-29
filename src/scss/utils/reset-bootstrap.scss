@@ -1,0 +1,97 @@
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+input.active.focus,
+input.active:focus,
+input.focus,
+input:active.focus,
+input:active:focus,
+input:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0 !important;
+    outline-color: transparent !important;
+    outline-width: 0 !important;
+    outline-style: none !important;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+    z-index: 99;
+    display: block;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+
+    & li {
+        width: 100%;
+    }
+}
+
+.dropdown-menu.show {
+    visibility: visible;
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: -1px;
+}
+
+.dropend .dropdown-menu[data-bs-popper] {
+    margin-left: -10px;
+}
+
+.card {
+    border-radius: 0;
+    border: 1px solid $border-gray-light;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.modal {
+    &-content {
+        border-radius: 0;
+    }
+}
+
+.input-group-text {
+    border-radius: 0;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+}

@@ -1,0 +1,49 @@
+.profile-user {
+    &-content {
+        padding: 35px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border-gray;
+        padding-bottom: 10px;
+    }
+
+    &-title {
+        font-size: 24px;
+        color: $color-main-gray;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &--item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        &--title {
+            color: $color-main-gray;
+            font-weight: bold;
+        }
+
+        &--text {
+            color: $color-main-gray;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .profile-user {
+        &__button-text {
+            display: none;
+        }
+
+    }
+}

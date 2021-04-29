@@ -1,0 +1,57 @@
+.site-comments {
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--avatar {
+            width: 110px;
+            height: 110px;
+
+            img {
+                border-radius: 50%;
+                max-width: 100%;
+                background-color: $back-white;
+            }
+        }
+
+        &--email {
+            a {
+                text-decoration: none;
+                color: $color-main-red;
+            }
+        }
+    }
+
+    &__latest {
+        &--title {
+            font-size: 16px;
+        }
+
+        &--list {
+            a {
+                font-size: 12px;
+                transition: .4s;
+
+                &:hover {
+                    color: $color-main-red;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .site-comments {
+        &__latest {
+            &--title {
+                font-size: 14px;
+            }
+        }
+    }
+
+}

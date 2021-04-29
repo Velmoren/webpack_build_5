@@ -1,0 +1,36 @@
+.good {
+    &-content {
+        padding: 35px;
+    }
+
+    &-title {
+        margin-bottom: 30px;
+    }
+
+    &-image {
+        margin-bottom: 30px;
+    }
+
+    &-price {
+        margin-bottom: 30px;
+    }
+
+    &-form {
+        height: 30px;
+        margin-bottom: 30px;
+
+        &__count {
+            max-width: 40px;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        &__in-cart {
+            max-height: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+    }
+}

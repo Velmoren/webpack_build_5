@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-content">
+            <header class="header pt-3 pb-3">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="header-box d-flex justify-content-between align-items-center flex-column flex-sm-row">
+                            <a href="/" class="header-logo">
+                                <img src="./images/logotip.png" alt="logotip">
+                            </a>
+                            <div class="header-controls mt-4 mb-4 mt-sm-3 mb-sm-3">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#enterUser">
+                                    Вход
+                                </button>
+                                <a class="btn btn-primary" href="/registration.html" role="button">Быстрая
+                                    регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="site-navbar">
+                <div class="site-navbar-wrapper" id="site-navbar-wrapper">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-dark pt-0 pb-0 bg-light" id="navbar-nav">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse order-2 order-lg-1" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/">Главная</a>
+                                    </li>
+                                    <li class="nav-item btn-group dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split order-2"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        </a>
+                                        <a href="#" class="nav-link order-1">Самоучители</a>
+                                        <ul class="dropdown-menu order-3">
+                                            <li><a class="dropdown-item" href="#">Самоучитель</a></li>
+                                            <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item btn-group dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split order-2"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        </a>
+                                        <a href="#" class="nav-link order-1">Покер</a>
+                                        <ul class="dropdown-menu dropdown-menu-first order-3">
+                                            <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                            <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                            <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                            <li class="nav-item btn-group dropend dropdown-submenu">
+                                                <a href="#"
+                                                    class="dropdown-item dropdown-toggle dropdown-toggle-split order-2"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                </a>
+                                                <a href="#" class="dropdown-item order-1">Покер</a>
+                                                <ul class="dropdown-menu dropdown-menu-second order-3">
+                                                    <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                                    <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                                    <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                                    <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item btn-group dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split order-2"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        </a>
+                                        <a href="#" class="nav-link order-1">Блэкджек</a>
+                                        <ul class="dropdown-menu order-3">
+                                            <li><a class="dropdown-item" href="#">Самоучитель</a></li>
+                                            <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item btn-group dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split order-2"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        </a>
+                                        <a href="#" class="nav-link order-1">Рулетка</a>
+                                        <ul class="dropdown-menu order-3">
+                                            <li><a class="dropdown-item" href="#">Самоучитель</a></li>
+                                            <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item btn-group dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle dropdown-toggle-split order-2"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        </a>
+                                        <a href="/video.html" class="nav-link order-1">Видео</a>
+                                        <ul class="dropdown-menu order-3">
+                                            <li><a class="dropdown-item" href="#">Самоучитель</a></li>
+                                            <li><a class="dropdown-item" href="#">Блэкджек</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/news.html">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Отзывы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class="d-flex order-1 order-lg-2">
+                                <input class="form-control" type="search" aria-label="Search">
+                            </form>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="breadcrumb">
+                <div class="container">
+                    <div class="breadcrumb-box">
+                        <ol class="breadcrumb-list">
+                            <li class="breadcrumb-list__item breadcrumb-list__item--first">
+                                <span>ВЫ ЗДЕСЬ:</span>
+                            </li>
+                            <li class="breadcrumb-list__item breadcrumb-list__item--link">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="breadcrumb-list__item breadcrumb-list__item--this">
+                                <span>Теория покера</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <section class="news">
+                <div class="container">
+                    <div class="news-box content-box">
+                        <div class="row gx-0">
+                            <div class="news-content col-md-12 col-lg-9 order-lg-0 order-1">
+                                <h1 class="news-title site-title">
+                                    Новости покера
+                                </h1>
+                                <div class="news-content__list d-flex flex-column">
+                                    <div class="news-content__item">
+                                        <div class="news-content__item--image">
+                                            <a href="/news-one.html">
+                                                <img src="./images/news/1.jpg" alt="1">
+                                            </a>
+                                        </div>
+                                        <h2 class="news-content__item--title">
+                                            <a href="/news-one.html">
+                                                WSOP 2021 состоится 17 ноября в Лас-Вегасе
+                                            </a>
+                                        </h2>
+                                        <div class="site-date_and_comment">
+                                            <span class="separate">апр 09, 2021</span>
+                                            <a href="#">Добавить комментарий</a>
+                                        </div>
+                                        <div class="news-content__item--subtitle">
+                                            <p>
+                                                О такой прекрасной новости для мира покера официально сообщили
+                                                организаторы <strong>WSOP</strong>. И по традиции, самое крупнейшее
+                                                покерное событие на
+                                                планете будет проходить в <strong>казино Rio в Лас-Вегасе</strong>. Но
+                                                вот время
+                                                проведения пришлось изменить, поэтому событие пройдет не как обычно,
+                                                летом, а осенью. Расписания пока нигде нет, но есть информация, что
+                                                первые турниры <strong>WSOP 2021</strong> запустят <strong>30
+                                                    сентября</strong>, а финиш
+                                                серии придется на
+                                                <strong>23 ноября</strong>.
+                                            </p>
+                                        </div>
+                                        <div class="news-content__item--controls">
+                                            <a class="btn btn-primary" href="/news-one.html" role="button">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="news-content__item">
+                                        <div class="news-content__item--image">
+                                            <a href="/news-one.html">
+                                                <img src="./images/news/2.jpg" alt="2">
+                                            </a>
+                                        </div>
+                                        <h2 class="news-content__item--title">
+                                            <a href="/news-one.html">
+                                                WSOP 2021 состоится 17 ноября в Лас-Вегасе
+                                            </a>
+                                        </h2>
+                                        <div class="site-date_and_comment">
+                                            <span class="separate">апр 09, 2021</span>
+                                            <a href="#">Добавить комментарий</a>
+                                        </div>
+                                        <div class="news-content__item--subtitle">
+                                            <p>
+                                                О такой прекрасной новости для мира покера официально сообщили
+                                                организаторы <strong>WSOP</strong>. И по традиции, самое крупнейшее
+                                                покерное событие на
+                                                планете будет проходить в <strong>казино Rio в Лас-Вегасе</strong>. Но
+                                                вот время
+                                                проведения пришлось изменить, поэтому событие пройдет не как обычно,
+                                                летом, а осенью. Расписания пока нигде нет, но есть информация, что
+                                                первые турниры <strong>WSOP 2021</strong> запустят <strong>30
+                                                    сентября</strong>, а финиш
+                                                серии придется на
+                                                <strong>23 ноября</strong>.
+                                            </p>
+                                        </div>
+                                        <div class="news-content__item--controls">
+                                            <a class="btn btn-primary" href="/news-one.html" role="button">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="news-content__item">
+                                        <div class="news-content__item--image">
+                                            <a href="/news-one.html">
+                                                <img src="./images/news/3.jpg" alt="3">
+                                            </a>
+                                        </div>
+                                        <h2 class="news-content__item--title">
+                                            <a href="/news-one.html">
+                                                WSOP 2021 состоится 17 ноября в Лас-Вегасе
+                                            </a>
+                                        </h2>
+                                        <div class="site-date_and_comment">
+                                            <span class="separate">апр 09, 2021</span>
+                                            <a href="#">Добавить комментарий</a>
+                                        </div>
+                                        <div class="news-content__item--subtitle">
+                                            <p>
+                                                О такой прекрасной новости для мира покера официально сообщили
+                                                организаторы <strong>WSOP</strong>. И по традиции, самое крупнейшее
+                                                покерное событие на
+                                                планете будет проходить в <strong>казино Rio в Лас-Вегасе</strong>. Но
+                                                вот время
+                                                проведения пришлось изменить, поэтому событие пройдет не как обычно,
+                                                летом, а осенью. Расписания пока нигде нет, но есть информация, что
+                                                первые турниры <strong>WSOP 2021</strong> запустят <strong>30
+                                                    сентября</strong>, а финиш
+                                                серии придется на
+                                                <strong>23 ноября</strong>.
+                                            </p>
+                                        </div>
+                                        <div class="news-content__item--controls">
+                                            <a class="btn btn-primary" href="/news-one.html" role="button">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <nav class="pagination-block" aria-label="Page navigation example">
+                                    <ul>
+                                        <li class="pagination-start">
+                                            <span>В начало</span>
+                                        </li>
+                                        <li class="pagination-prev">
+                                            <span>Назад</span>
+                                        </li>
+                                        <li>
+                                            <span>1</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3</a>
+                                        </li>
+                                        <li class="pagination-next">
+                                            <a href="#">Вперёд</a>
+                                        </li>
+                                        <li class="pagination-end">
+                                            <a href="#">В конец</a>
+                                        </li>
+                                    </ul>
+                                    <span class="pagination-description">Страница 1 из 61</span>
+                                </nav>
+                            </div>
+                            <div class="right-menu col-md-12 col-lg-3 order-lg-0 order-2">
+                                <div class="banner">
+                                    <div class="banner-content ">
+                                        <a href="#">
+                                            <img src="./images/banner.jpg" alt="banner">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="popular-news">
+                                    <div class="popular-news__list">
+                                        <div class="popular-news__item">
+                                            <div class="popular-news__item--top">
+                                                <div class="popular-news__item--top-title">
+                                                    <a href="#">
+                                                        WSOP 2021 состоится 17 ноября в Лас…
+                                                    </a>
+                                                </div>
+                                                <div class="popular-news__item--top-image ">
+                                                    <a href="#" class="scale-image-container">
+                                                        <img src="./images/popular-news/1.jpg" alt="1">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="popular-news__item--bottom">
+                                                <span class="popular-news__item--bottom-description">
+                                                    09 апр 2021 Новости
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="popular-news__item">
+                                            <div class="popular-news__item--top">
+                                                <div class="popular-news__item--top-title">
+                                                    <a href="#">
+                                                        WSOP 2021 состоится 17 ноября в Лас…
+                                                    </a>
+                                                </div>
+                                                <div class="popular-news__item--top-image ">
+                                                    <a href="#" class="scale-image-container">
+                                                        <img src="./images/popular-news/2.jpg" alt="1">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="popular-news__item--bottom">
+                                                <span class="popular-news__item--bottom-description">
+                                                    09 апр 2021 Новости
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="popular-news__item">
+                                            <div class="popular-news__item--top">
+                                                <div class="popular-news__item--top-title">
+                                                    <a href="#">
+                                                        WSOP 2021 состоится 17 ноября в Лас…
+                                                    </a>
+                                                </div>
+                                                <div class="popular-news__item--top-image ">
+                                                    <a href="#" class="scale-image-container">
+                                                        <img src="./images/popular-news/3.jpg" alt="1">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="popular-news__item--bottom">
+                                                <span class="popular-news__item--bottom-description">
+                                                    09 апр 2021 Новости
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#">О нас</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Карта сайта</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-social">
+                        <h4 class="footer-social__title">
+                            Мы в социальных сетях
+                        </h4>
+                        <ul class="footer-social__list">
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/vk.svg" alt="vk">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/youtube.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/telegram.svg" alt="telegram">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <div class="footer-copyright">
+                        <p>
+                            © 2009 - 2021 Bettr.ru. Все права защищены.
+                        </p>
+                        <p>
+                            <a href="#">
+                                Политика защиты персональной информации пользователей
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="footer-payment">
+                        <a href="#">
+                            <img src="./images/footer/acc_blue_on_white_ru.png" alt="acc_blue_on_white_ru">
+                        </a>
+                        <a href="#">
+                            <img src="./images/footer/v_blue_on_white_ru.png" alt="v_blue_on_white_ru">
+                        </a>
+                        <a href="#">
+                            <img src="./images/footer/logo-ru.png" alt="logo-ru">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade modal-enter-user" id="enterUser" tabindex="-1" aria-labelledby="enterUserTitle"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="enterUserTitle">
+                            <span>Войти в личный кабинет</span>
+                            <span class="modal-enter-user__subtitle">
+                                <span>Еще не имеете аккаунта?</span>
+                                <a href="#">Регистрация</a>
+                            </span>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon-login">
+                                    <i class="bi-person-fill"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Логин" aria-label="Логин"
+                                    aria-describedby="basic-addon-login">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon-pass">
+                                    <i class="bi-shield-lock-fill"></i>
+                                </span>
+                                <input type="password" class="form-control" placeholder="Пароль" aria-label="Пароль"
+                                    aria-describedby="basic-addon-pass" autocomplete="on">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/vosstanovit.html" class="modal-enter-user-link">Забыли логин?</a>
+                        <a href="/vosstanovit.html" class="modal-enter-user-link">Забыли пароль?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

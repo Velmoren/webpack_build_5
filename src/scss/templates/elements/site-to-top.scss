@@ -1,0 +1,16 @@
+.site-to-top {
+    width: 60px;
+    height: 60px;
+    background-color: $back-primary;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &-show {
+        display: flex;
+    }
+}

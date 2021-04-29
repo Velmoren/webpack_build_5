@@ -1,0 +1,67 @@
+.breadcrumb {
+    margin: 0;
+
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &__item {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 5px;
+                height: 5px;
+                background-color: $back-gray;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            &--first {
+                color: $color-main-white;
+                text-transform: uppercase;
+                padding: 15px 25px;
+                background-color: $back-gray;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 15px;
+                    height: 20px;
+                    margin-right: 5px;
+                    background-image: url('../images/icons/map.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+            }
+
+            &--link {
+                a {
+                    color: $color-main-black;
+                    text-decoration: none;
+                }
+            }
+
+            &--this {
+                color: $color-main-red;
+            }
+        }
+    }
+}

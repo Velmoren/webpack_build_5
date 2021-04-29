@@ -1,0 +1,18 @@
+.not-found {
+    &-content {
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        margin-bottom: 30px;
+    }
+
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
+}

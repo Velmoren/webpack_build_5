@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-content">
+            <header class="header pt-3 pb-3" id="header">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="header-box d-flex justify-content-between align-items-center flex-column flex-sm-row">
+                            <a href="/" class="header-logo">
+                                <img src="./images/logotip.png" alt="logotip">
+                            </a>
+                            <div class="header-controls mt-4 mb-4 mt-sm-3 mb-sm-3">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#enterUser">
+                                    Вход
+                                </button>
+                                <a class="btn btn-primary" href="/registration.html" role="button">Быстрая
+                                    регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="main">
+                <div class="container">
+                    <div class="main-box content-box">
+                        <div class="row gx-0">
+                            <div id="system-message-container">
+                                <div id="system-message">
+                                    <div class="alert alert-notice">
+                                        <a class="close" data-dismiss="alert">×</a>
+                                        <h4 class="alert-heading">Предупреждение</h4>
+                                        <div>
+                                            <div class="alert-message">Введённые вами пароли не совпадают. Пожалуйста,
+                                                введите желаемый пароль в поле пароля и в поле подтверждения.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="left-menu p-0 col-md-12 col-lg-3 order-lg-0 order-2">
+
+                                <div class="banner">
+                                    <div class="banner-content ">
+                                        <a href="#">
+                                            <img src="./images/banner.jpg" alt="banner">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="main-left-menu__quotes">
+                                    <div class="main-left-menu__quotes-box">
+                                        <h2 class="main-left-menu__quotes-title">
+                                            Цитата дня
+                                        </h2>
+                                        <div class="main-left-menu__quotes-item">
+                                            <p>
+                                                Большую часть денег, которую Вы выигрываете в покер, Вы
+                                                получаете не
+                                                из-за своей блестящей игры, а из-за оплошности Ваших
+                                                соперников.
+                                            </p>
+                                            <h4>Лу Кригер</h4>
+                                            <h5>Покерный
+                                                писатель
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-content p-0 col-md-12 col-lg-9 order-lg-0 order-1">
+                                <h1 class="main-content__title site-title">
+                                    Последние обновления
+                                </h1>
+
+                                <div
+                                    class="main-content__cards card-group row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-0">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-header bg-transparent border-success">
+                                                Опытные покеристы не попали в призы при этом залили по $175 000
+                                            </div>
+                                            <a href="/news-one.html" class="card-image__scale">
+                                                <img src="./images/post-images/6.jpg" class="card-img-top"
+                                                    alt="post-image">
+                                            </a>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Известные регуляры Виктор Малиновский и Майкл Аддамо не на шутку
+                                                    разошлись в
+                                                    онлайн-турнире с бай-ин...
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent">
+                                                <p>
+                                                    <span>апр 08, 2021 Просмотров:150</span>
+                                                    <a href="#" class="comment"><img src="./images/icons/comments.svg"
+                                                            alt="comments"><span>0</span></a>
+                                                </p>
+                                                <p class="card-footer__more">
+                                                    <a href="#">
+                                                        Подробнее
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-header bg-transparent border-success">
+                                                Уже близко познакомившись с миром покера Мария Лаврентьева решила
+                                                покорить и
+                                                сферу
+                                                моделинга
+                                            </div>
+                                            <a href="/news-one.html" class="card-image__scale">
+                                                <img src="./images/post-images/1.jpg" class="card-img-top"
+                                                    alt="post-image">
+                                            </a>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Покердом запустил сателлит на главный турнир SPF Весна, который
+                                                    пройдет
+                                                    с 21
+                                                    по
+                                                    25 апреля. Попытать..
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent">
+                                                <p>
+                                                    <span>апр 08, 2021 Просмотров:150</span>
+                                                    <a href="#" class="comment"><img src="./images/icons/comments.svg"
+                                                            alt="comments"><span>0</span></a>
+                                                </p>
+                                                <p class="card-footer__more">
+                                                    <a href="#">
+                                                        Подробнее
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-header bg-transparent border-success">
+                                                Опытные покеристы не попали в призы при этом залили по $175 000
+                                            </div>
+                                            <a href="/news-one.html" class="card-image__scale">
+                                                <img src="./images/post-images/2.jpg" class="card-img-top"
+                                                    alt="post-image">
+                                            </a>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Главное событие Irish Open Online все еще находится в стадии
+                                                    разработки,
+                                                    но
+                                                    оно
+                                                    уже превзошло все об...
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent">
+                                                <p>
+                                                    <span>апр 08, 2021 Просмотров:150</span>
+                                                    <a href="#" class="comment"><img src="./images/icons/comments.svg"
+                                                            alt="comments"><span>0</span></a>
+                                                </p>
+                                                <p class="card-footer__more">
+                                                    <a href="#">
+                                                        Подробнее
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-header bg-transparent border-success">
+                                                Опытные покеристы не попали в призы при этом залили по $175 000
+                                            </div>
+                                            <a href="/news-one.html" class="card-image__scale">
+                                                <img src="./images/post-images/3.jpg" class="card-img-top"
+                                                    alt="post-image">
+                                            </a>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    С самого начала сезона каждый игрок в мире хотел знать, когда будет
+                                                    разыграна
+                                                    крупнейшая серия party...
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent">
+                                                <p>
+                                                    <span>апр 08, 2021 Просмотров:150</span>
+                                                    <a href="#" class="comment"><img src="./images/icons/comments.svg"
+                                                            alt="comments"><span>0</span></a>
+                                                </p>
+                                                <p class="card-footer__more">
+                                                    <a href="#">
+                                                        Подробнее
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-header bg-transparent border-success">
+                                                Опытные покеристы не попали в призы при этом залили по $175 000
+                                            </div>
+                                            <a href="/news-one.html" class="card-image__scale">
+                                                <img src="./images/post-images/4.jpg" class="card-img-top"
+                                                    alt="post-image">
+                                            </a>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Шоу «ТЫ_Топ-модель» на канале ТНТ привлекло к себе немереное
+                                                    количество
+                                                    красавиц, но до съемок добра...
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent">
+                                                <p>
+                                                    <span>апр 08, 2021 Просмотров:150</span>
+                                                    <a href="#" class="comment"><img src="./images/icons/comments.svg"
+                                                            alt="comments"><span>0</span></a>
+                                                </p>
+                                                <p class="card-footer__more">
+                                                    <a href="#">
+                                                        Подробнее
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-header bg-transparent border-success">
+                                                Опытные покеристы не попали в призы при этом залили по $175 000
+                                            </div>
+                                            <a href="/news-one.html" class="card-image__scale">
+                                                <img src="./images/post-images/5.jpg" class="card-img-top"
+                                                    alt="post-image">
+                                            </a>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Partypoker решил запустить Coin Flip для игроков SPINS. Несмотря на
+                                                    огромные
+                                                    преимущества по рейкбек...
+                                                </p>
+                                            </div>
+                                            <div class="card-footer bg-transparent">
+                                                <p>
+                                                    <span>апр 08, 2021 Просмотров:150</span>
+                                                    <a href="#" class="comment"><img src="./images/icons/comments.svg"
+                                                            alt="comments"><span>0</span></a>
+                                                </p>
+                                                <p class="card-footer__more">
+                                                    <a href="#">
+                                                        Подробнее
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-content__more-news">
+                                    <a href="/news.html">Больше новостей</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="site-title video-title">Видео</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <a href="/video-one.html" class="card video-big bg-dark text-white">
+                                <img src="./images/post-video/1.jpg" class="card-img" alt="post-video">
+                                <div class="card-img-overlay">
+                                    <strong class="card-sticker">
+                                        ФАКТЫ О КАЗИНО
+                                    </strong>
+                                    <h5 class="card-title">
+                                        Джанкет-туры в казино! Интервью с директором казино.
+                                    </h5>
+                                </div>
+                                <div class="card-play"></div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <div class="video-mini">
+                                <a href="/video-one.html" class="video-mini__item">
+                                    <div class="video-mini__item--image">
+                                        <img src="./images/post-video/1.jpg" alt="post-video">
+                                    </div>
+                                    <div class="video-mini__item--content">
+                                        <h4>
+                                            Джанкет-туры в казино! Интервью с директором казино.
+                                        </h4>
+                                        <p>
+                                            На сегодняшний день джанкет-туры (игровые туры) организуются почти по всему
+                                            миру.
+                                            Российским т…
+                                        </p>
+                                    </div>
+                                    <div class="video-mini__item--comments">
+                                        <div>
+                                            53
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="/video-one.html" class="video-mini__item">
+                                    <div class="video-mini__item--image">
+                                        <img src="./images/post-video/1.jpg" alt="post-video">
+                                    </div>
+                                    <div class="video-mini__item--content">
+                                        <h4>
+                                            Джанкет-туры в казино! Интервью с директором казино.
+                                        </h4>
+                                        <p>
+                                            На сегодняшний день джанкет-туры (игровые туры) организуются почти по всему
+                                            миру.
+                                            Российским т…
+                                        </p>
+                                    </div>
+                                    <div class="video-mini__item--comments">
+                                        <div>
+                                            53
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="/video-one.html" class="video-mini__item">
+                                    <div class="video-mini__item--image">
+                                        <img src="./images/post-video/1.jpg" alt="post-video">
+                                    </div>
+                                    <div class="video-mini__item--content">
+                                        <h4>
+                                            Джанкет-туры в казино! Интервью с директором казино.
+                                        </h4>
+                                        <p>
+                                            На сегодняшний день джанкет-туры (игровые туры) организуются почти по всему
+                                            миру.
+                                            Российским т…
+                                        </p>
+                                    </div>
+                                    <div class="video-mini__item--comments">
+                                        <div>
+                                            53
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#">О нас</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#">Карта сайта</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-social">
+                        <h4 class="footer-social__title">
+                            Мы в социальных сетях
+                        </h4>
+                        <ul class="footer-social__list">
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/vk.svg" alt="vk">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/youtube.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/telegram.svg" alt="telegram">
+                                </a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="#">
+                                    <img src="./images/social/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <div class="footer-copyright">
+                        <p>
+                            © 2009 - 2021 Bettr.ru. Все права защищены.
+                        </p>
+                        <p>
+                            <a href="#">
+                                Политика защиты персональной информации пользователей
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="footer-payment">
+                        <a href="#">
+                            <img src="./images/footer/acc_blue_on_white_ru.png" alt="acc_blue_on_white_ru">
+                        </a>
+                        <a href="#">
+                            <img src="./images/footer/v_blue_on_white_ru.png" alt="v_blue_on_white_ru">
+                        </a>
+                        <a href="#">
+                            <img src="./images/footer/logo-ru.png" alt="logo-ru">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade modal-enter-user" id="enterUser" tabindex="-1" aria-labelledby="enterUserTitle"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="enterUserTitle">
+                            <span>Войти в личный кабинет</span>
+                            <span class="modal-enter-user__subtitle">
+                                <span>Еще не имеете аккаунта?</span>
+                                <a href="#">Регистрация</a>
+                            </span>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon-login">
+                                    <i class="bi-person-fill"></i>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Логин" aria-label="Логин"
+                                    aria-describedby="basic-addon-login">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon-pass">
+                                    <i class="bi-shield-lock-fill"></i>
+                                </span>
+                                <input type="password" class="form-control" placeholder="Пароль" aria-label="Пароль"
+                                    aria-describedby="basic-addon-pass" autocomplete="on">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/vosstanovit.html" class="modal-enter-user-link">Забыли логин?</a>
+                        <a href="/vosstanovit.html" class="modal-enter-user-link">Забыли пароль?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-to-top" id="site-to-top">
+            <i class="bi-caret-up-square" style="font-size: 2rem; color: white;"></i>
+        </div>
+
+    </div>
+
+</body>
+</html>

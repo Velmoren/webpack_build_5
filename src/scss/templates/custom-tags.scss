@@ -1,0 +1,27 @@
+#system-message-container {
+    .alert {
+        border-radius: 0 !important;
+
+        &.alert-message {
+            color: #155724 !important;
+            background-color: #d4edda !important;
+            border-color: #c3e6cb !important;
+        }
+
+        &.alert-notice {
+            color: #664d03 !important;
+            background-color: #fff3cd !important;
+            border-color: #ffecb5 !important;
+        }
+    }
+
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        text-decoration: none;
+        color: $color-main-black;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

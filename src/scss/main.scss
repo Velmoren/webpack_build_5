@@ -1,0 +1,50 @@
+@import './utils/normalize.scss';
+@import './utils/vars.scss';
+@import './utils/animations.scss';
+@import './utils/fonts.scss';
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import './utils/reset-bootstrap.scss';
+
+@import './templates/interface.scss';
+@import './templates/header.scss';
+@import './templates/footer.scss';
+@import './templates/navbar.scss';
+@import './templates/breadcrumb.scss';
+@import './templates/left-menu.scss';
+@import './templates/right-menu.scss';
+@import './templates/main-section.scss';
+@import './templates/banners.scss';
+@import './templates/sliders.scss';
+@import './templates/video-main.scss';
+@import './templates/modals/modal-user.scss';
+
+//elements
+@import './templates/site-comments.scss';
+@import './templates/elements/site-to-top.scss';
+@import './templates/modals/modal-profile.scss';
+
+//pages
+@import './templates/registration.scss';
+@import './templates/vosstanovit.scss';
+@import './templates/news.scss';
+@import './templates/pagination.scss';
+@import './templates/popular-news.scss';
+@import './templates/news-one.scss';
+@import './templates/video.scss';
+@import './templates/video-one.scss';
+@import './templates/article-one.scss';
+@import './templates/feedback.scss';
+@import './templates/feedback-one.scss';
+@import './templates/not-found.scss';
+@import './templates/search.scss';
+@import './templates/profile-user.scss';
+@import './templates/change-profile-user.scss';
+@import './templates/category.scss';
+@import './templates/good.scss';
+@import './templates/goods.scss';
+@import './templates/empty-cart.scss';
+@import './templates/custom-tags.scss';
+@import './templates/cart.scss';
+@import './templates/thanks.scss';

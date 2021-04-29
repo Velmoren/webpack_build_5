@@ -1,0 +1,26 @@
+.goods {
+    &-content {
+        padding: 35px;
+    }
+
+    &-item {
+        border-bottom: 1px solid $border-gray;
+        margin-bottom: 30px;
+    }
+
+    &-title {
+        margin-bottom: 30px;
+    }
+
+    &-image {
+        margin-bottom: 30px;
+    }
+
+    &-price {
+        margin-bottom: 30px;
+    }
+
+    &-links {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,11 @@
+.modal-profile-user {
+    &__link {
+        text-decoration: none;
+        color: $color-main-gray;
+        transition: .4s;
+
+        &:hover {
+            color: $color-main-red;
+        }
+    }
+}

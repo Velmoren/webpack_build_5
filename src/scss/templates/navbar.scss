@@ -1,0 +1,212 @@
+.navbar {
+    z-index: 100;
+    height: 58px;
+    border: 1px solid $border-gray;
+
+    &.noborder {
+        border: none;
+        border-left: 1px solid $border-gray;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        padding: 17px 16px;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        font-family: Arial, sans-serif;
+        color: black !important;
+
+        &:hover {
+            background-color: $back-primary;
+            color: white !important;
+        }
+
+        &.show,
+        &.show~a {
+            background-color: $back-primary;
+            color: white !important;
+        }
+
+        &-arrow {
+            padding-left: 0 !important;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $back-primary;
+
+        a {
+            color: white;
+
+            &:hover {
+                background-color: $back-primary;
+            }
+        }
+    }
+
+    .nav-item {
+        &:hover {
+            a {
+                background-color: $back-primary;
+                color: $color-main-white;
+            }
+        }
+
+        &:focus {
+            a {
+                background-color: $back-primary;
+                color: $color-main-white;
+            }
+        }
+    }
+
+    .nav-item:not(.dropdown-submenu) {
+        border-right: 1px solid #e4e4e4;
+    }
+
+
+    .navbar-toggler {
+        border-radius: 0;
+        padding: 14px 16px;
+        background-color: $back-primary;
+        border: none;
+    }
+
+    .dropdown.btn-group {
+        .dropdown-toggle {
+            padding-left: 0 !important;
+        }
+    }
+
+    .dropdown-submenu {
+        .dropdown-menu {
+            z-index: 10;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        }
+    }
+
+    .dropdown-toggle {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .dropdown-item {
+        padding: 10px;
+        transition: padding .3s;
+
+        &:hover {
+            padding-left: 15px;
+        }
+    }
+
+    .dropdown-item.show:hover,
+    .dropdown-item.show:focus {
+        background-color: $back-primary;
+        color: white !important;
+    }
+
+    form {
+        height: 100%;
+
+        input {
+            font-size: 14px;
+            padding: 16px 24px;
+            background-color: $back-primary;
+            border-color: $back-primary;
+            border-radius: 0;
+            background-image: url('../images/search.svg');
+            background-repeat: no-repeat;
+            background-position: 18px 50%;
+            background-size: 15px;
+            max-width: 56px;
+            transition: max-width .3s;
+            color: $color-main-white;
+
+            &:focus {
+                color: $color-main-white;
+                max-width: 200px;
+                background-color: $back-primary;
+                border-color: $back-primary;
+                caret-color: $color-main-white;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        border: none;
+
+        .nav-item:not(.dropdown-submenu) {
+            border-right: none;
+        }
+
+        .nav-item.btn-group {
+            display: flex;
+            flex-wrap: wrap;
+
+            a {
+                width: 50%;
+            }
+
+            ul {
+                width: 100%;
+            }
+        }
+
+        .nav-item {
+            border-right: none;
+        }
+
+        .nav-link {
+            color: white !important;
+            border-bottom: 1px solid rgba(228, 228, 228, .4);
+        }
+
+        .navbar-nav {
+            background-color: $back-primary;
+        }
+
+        // .dropdown-menu a:not(.dropdown-toggle-split) {
+        //     border-bottom: 1px solid rgba(228, 228, 228, .4);
+        // }
+
+        .dropdown-menu {
+            padding-left: 20px;
+            list-style: none;
+
+            & li {
+                position: relative;
+            }
+
+            & li::before {
+                content: "";
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: white;
+                position: absolute;
+                top: 15px;
+                left: 0
+            }
+        }
+
+
+
+        .dropdown-submenu {
+            .dropdown-menu {
+                z-index: 10;
+                box-shadow: none;
+            }
+
+            .dropdown-toggle-split {
+                display: none;
+            }
+        }
+    }
+}

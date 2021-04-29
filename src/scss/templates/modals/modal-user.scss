@@ -1,0 +1,26 @@
+.modal {
+    &-enter-user {
+        &__subtitle {
+            font-size: 14px;
+
+            span {
+                color: $color-main-gray;
+            }
+
+            a {
+                color: $color-main-red;
+                text-decoration: none;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $color-main-red;
+            font-size: 12px;
+
+            &:hover {
+                color: $color-main-red;
+            }
+        }
+    }
+}

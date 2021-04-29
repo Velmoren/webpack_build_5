@@ -1,0 +1,13 @@
+.banner {
+    border-bottom: 1px solid $border-gray-light;
+
+    &-content {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
